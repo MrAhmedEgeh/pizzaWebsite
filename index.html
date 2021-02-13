@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Template 4/css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Pizz Now</title>
+</head>
+<body>
+    <!-------Start of 1st section---------->
+    <section class="section-1">
+            <div class="nav">
+                <div class="wrapper">
+                    <div class="con">
+                        <h1>Pizza <span>Now</span></h1>
+                        <ul>
+                            <li class="active">Home</li>
+                            <li>Menu</li>
+                            <li>Branches</li>
+                            <li>Contact Us</li>
+                        </ul>
+                        <div class="buttons">
+                            <button class="order">Order Now</button>
+                            <button class="login">Login</button>
+                        </div>
+                        <div class="side-menu">
+                            <i onclick="openSideMenu();" class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="side-list" id="side-list">
+                        <ul>
+                            <li onclick="closeSideMenu();">&times;</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Branches</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <button class="order sp-b">Order Now</button>
+                        <button class="login sp-b">Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="wrapper">
+                    <div class="con">
+                        <h2>Check Out our new <span>Spicy</span> offers</h2>
+                        <button><a href="#menu">Our menu</a></button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-------End of 1st section---------->
+
+
+    <!-------Start of 2nd section---------->
+    <section class="section-2" >
+        <div class="wrapper">
+            <div class="header">
+                <h2 id="menu">Our Menu</h2>
+                <hr>
+            </div>
+            <div class="container mx-auto">
+                <div class="row text-center justify-content-center my-5">
+                    <div class="col-1.333 mx-3 p-3 active">
+                        <i class="fas fa-heart fa-2x"></i>
+                        <h4>Top selling</h4>
+                    </div>
+                    <div class="col-1.333  p-3 hot">
+                        <i class="fab fa-hotjar fa-2x"></i>
+                        <h4>Offers</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-pizza-slice fa-2x"></i>
+                        <h4>Pizza</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-utensils fa-2x"></i>
+                        <h4>Side dishes</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-egg fa-2x"></i>
+                        <h4>Chicken</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-carrot fa-2x"></i>
+                        <h4>Salad</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-wine-glass fa-2x"></i>
+                        <h4>Dips</h4>
+                    </div>
+                    <div class="col-1.333  p-3">
+                        <i class="fas fa-ice-cream fa-2x"></i>
+                        <h4>Dessert</h4>
+                    </div>
+                    <div class="col-1.333 p-3">
+                        <i class="fas fa-wine-glass-alt fa-2x"></i>
+                        <h4>Drinks</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="cards">
+                        <span class="span1">NEW</span>
+                        <div class="image">
+                            <img src="../Template 4/images/pizza-20201-1920x1080.jpg" alt="">
+                        </div>
+                        <h4>MARGARITA</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <span class="span2">Top selling</span>
+                        <div class="image">
+                            <img src="../Template 4/images/pizz2.jpg" alt="">
+                        </div>
+                        <h4>PEPPERONI FEAST</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="image">
+                            <img src="../Template 4/images/pizza3.jpg" alt="">
+                        </div>
+                        <h4>MEDITERRANEAN</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <span class="span3">Vegetarian</span>
+                        <div class="image">
+                            <img src="../Template 4/images/pizza4.jpg" alt="">
+                        </div>
+                        <h4>VEGGI</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="image">
+                            <img src="../Template 4/images/pizza5.jpg" alt="">
+                        </div>
+                        <h4>PIZZ NOW'S SPECIAL</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="image">
+                            <img src="../Template 4/images/pizza6.jpg" alt="">
+                        </div>
+                        <h4>CHICKEN HERO</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="image">
+                            <img src="../Template 4/images/pizza7.jpg" alt="">
+                        </div>
+                        <h4>HAWAIIAN</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                    <div class="cards">
+                        <div class="image">
+                            <img src="../Template 4/images/pizza8.jpg" alt="">
+                        </div>
+                        <h4>BBQ CHICKEN</h4>
+                        <hr>
+                        <p>Tomato Sauce, Extra 100% Mozzarella</p>
+                        <button class="btn btn-success">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------End of 2nd section---------->
+
+    <!-------Start of Section 3---------->
+
+    <section class="section-3">
+        <div class="wrapper">
+            <div class="con">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="subject">
+                <textarea placeholder="Write your message"></textarea>
+                <button>Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-------End of Section 3---------->
+
+    <!--------Footer------->
+
+    <footer>
+        <p> &copy; Made by Pizza Now</p>
+    </footer>
+    <!--------Footer------->
+    <script src="https://kit.fontawesome.com/13ee897d05.js" crossorigin="anonymous"></script>
+</body>
+</html>

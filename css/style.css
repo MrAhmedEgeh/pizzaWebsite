@@ -1,0 +1,379 @@
+/*     Start of General Rules        */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+}
+.wrapper{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*    End of  General Rules        */
+
+
+/*      Start of section  1 */
+.section-1{
+    height: 738px;
+    background-image: url(../images/nik-owens-40OJLYVWeeM-unsplash.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    z-index: 100;
+}
+.section-1 .nav{
+    padding-top: 15px;
+    width: 100%;
+    background-color: rgba(79,79,79,0.3);
+}
+.section-1 .nav .con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-1 .nav .con h1{
+    font-size: 40px;
+    color: #fff;
+}
+.section-1 .nav .con h1 span{
+    color: #fc4c4c;
+}
+.section-1 .nav .con ul{
+    list-style: none;
+}
+.section-1 .nav .con ul li{
+    display: inline-block;
+    margin: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+.section-1 .nav .con ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #fc4c4c;
+    display: block;
+    margin: auto;
+    transition: all .5s ease;
+}
+.section-1 .nav .con ul li:hover{cursor: pointer;}
+.section-1 .nav .con ul li:hover::after{width: 100%;}
+.section-1 .nav .con ul li.active{z-index: 100; color: #fff; position: relative;}
+.section-1 .nav .con ul li.active::before{
+    content: '';
+    background-color: #fc4c4c;
+    color: #fff;
+    height: 93px;
+    width: 64px;
+    position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: -4px;
+    right: 10px;
+    z-index: -1;
+    margin: 0 auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.section-1 .nav .order, .section-1 .nav .login{
+    background-color: #fc4c4c;
+    outline: none;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+
+}
+.section-1 .nav .order:hover{cursor: pointer; background-color: rgba(252, 76, 76,0.8)}
+.section-1 .nav .login{
+    background-color: #fff;
+    color: #fc4c4c;
+}
+.section-1 .nav .login:hover{cursor: pointer; background-color: rgba(230, 230, 230, 0.8)}
+.section-1 .nav .con .side-menu{
+    color: #fff;
+    font-size: 40px;
+    display: none;
+}
+.section-1 .nav .con .side-menu:hover{
+    cursor: pointer;
+}
+.section-1 .nav .side-list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(79,79,79,0.8);
+    overflow-x: hidden;
+    width: 0;
+    z-index: 11;
+}
+.section-1 .nav .side-list ul li{
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+}
+.section-1 .nav .side-list ul li:nth-child(n + 2):hover{background-color: #fc4c4c; cursor: pointer;}
+.section-1 .nav .side-list ul li:first-of-type{
+    font-size: 40px;
+    text-align: left;
+    color: #fff;
+    border: none;
+}
+.section-1 .nav .side-list ul li:first-of-type:hover{cursor: pointer;}
+.section-1 .nav .side-list ul li a{
+    text-decoration: none;
+    color:  #fff;
+
+}
+.section-1 .nav .side-list .sp-b{margin: 0 0 0 14px;}
+.section-1 .main .wrapper button {
+    background-color: #fc4c4c;
+    outline: none;
+    border: none;
+    padding: 16px 10px 16px 10px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.section-1 .main .wrapper button a{
+    text-decoration: none;
+    color: #fff;
+}
+.section-1 .main .wrapper button:hover{cursor: pointer; background-color: rgba(252, 76, 76,0.8)}
+.section-1 .main .wrapper h2{
+    font-size: 50px;
+    color: #fff;
+
+}
+.section-1 .main .wrapper .con{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1 .main .wrapper .con h2 span{
+    color: #fc4c4c;
+}
+@media (max-width: 997px){ 
+    .section-1 .nav .con ul,
+    .section-1 .nav .con .buttons{
+        display: none;
+    }
+    .section-1 .nav .con .side-menu{
+        display: block;
+    }
+    .section-1 .main .wrapper h2{
+        text-align: center;
+    }
+    
+    
+}
+@media (max-width: 769px) {
+    .wrapper{
+        width: 100%;
+    }
+    .section-1 .nav .con h1{
+        float: right;
+    }
+    .section-1 .nav .con .side-menu{
+        float: left;
+    }
+}
+/*      End of section 1  */
+
+
+
+/*      Start of section 2    */
+
+.section-2 {
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+}
+.section-2 h2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.section-2 .header{
+    width: 250px;
+    margin: 0 auto;
+}
+.section-2 h2+hr{
+    background-color: black;
+    height: 0.5px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.section-2 .container .row div i{
+    color: #6c6262;
+}
+.section-2 .container .row div h4{
+    color: #6c6262;
+    margin-top: 15px;
+}
+.section-2 .container .row:first-child div:hover{cursor: pointer; border: 2px solid #6c6262;}
+.section-2 .container .row .hot i,.section-2 .container .row .hot h4{
+    color: #fc4c4c;
+}
+.section-2 .container .row .hot:hover{cursor: pointer; border: 2px solid #fc4c4c;}
+.section-2 .container .row .active{border: 2px solid #6c6262;}
+.section-2 .container .row .cards{
+    width: 226px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 15px;
+}
+.section-2 .container .row .cards h4{
+    font-size: 20px;
+}
+.section-2 .container .row .cards button{
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.section-2 .container .row .cards .span1,.span2,.span3{
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    color: #fff;
+    transform: rotate(-10deg);
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 111;
+}
+.section-2 .container .row .cards .span1{
+    background-color: #FD921E;
+}
+.section-2 .container .row .cards .span2{
+    background-color: #fc4c4c;
+}
+.section-2 .container .row .cards .span3{
+    background-color: #9AD964;
+}
+.section-2 .container .row .cards .image{
+    width: 226px;
+}
+.section-2 .container .row .cards .image img{
+    width: 100%;
+    height: 127.13px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.section-2 .container .row .cards p{
+    color: #888;
+}
+
+/*      End of section 2       */
+
+
+/*      Start of section 3 */
+.section-3{
+    height: 580px;
+    padding-top: 50px;
+}
+.section-3 h2{
+   text-align: center;
+}
+.section-3 .con{
+    height: 100%;
+    margin: 0 auto;
+}
+.section-3 input{
+    display: block;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+    width: 35%;
+}
+.section-3 textarea{
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+.section-3 input, .section-3 textarea{
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    padding: 25px;
+}
+.section-3 button{
+    outline: none;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    background-color: #FD921E;
+    color: #fff;
+    margin: 25px auto 0;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*    end of section 3   */
+
+
+
+/*     Start of footer   */
+
+footer{
+    height: 50px;
+    background-color: black;
+    color: #fff;
+}
+footer p{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*------Start of Media Queries------------*/
+
+@media (max-width: 450px){ /*  Extra small phones  */
+
+}
+
+@media (max-width: 767px){ /*  For mobile &  tablet rules  */
+
+}
+@media (min-width: 768px) and (max-width: 991px){ /*  For smal screen rules  */
+    .wrapper{
+        width: 750px;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1199px){ /*  For medium screen rules  */
+    .wrapper{
+        width: 970px;
+    }
+    
+    
+}
+@media (min-width: 1200px){ /* For large screen rules */
+    .wrapper{
+        width: 1170px;
+    }
+    
+}
+
+/*------End of Media Queries------------*/
